@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Bolby - Portfolio/CV/Resume React Template</title>
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <link rel="stylesheet" href="./css/all.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/simple-line-icons.css" type="text/css" media="all" />
+  <title>React App</title>
+  <style>
+    .d-social {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .a-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: #eee;
+      margin: 10px;
+      border-radius: 30%;
+      box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .7);
+      color: #3498db;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* .a-social {
+      font-size: 28px;
+      transition: 0.5s linear;
+    }
+
+    .a-social:hover {
+      transform: scale(1.3);
+      color: #eee;
+    } */
+
+    /* .a-social::before {
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: #3498db;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    } */
+
+    .a-social:hover::before {
+      animation: a-social-animation 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+
+    @keyframes a-social-animation {
+      0% {
+        left: -110%;
+        top: 90%;
+      }
+
+      50% {
+        left: 10%;
+        top: -30%;
+      }
+
+      100% {
+        left: -10%;
+        top: -10%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>
