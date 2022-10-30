@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="Anil z" name="author">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Creating a professional, modern and sophisticated online resume website is easy with Martyn CV / Resume">
+  <meta name="keywords"
+    content="CV, resume, card, vcard, online cv, online resume, professional resume, portfolio, one page, bootstrap responsive, creative html template, creative design, parallax, personal">
+
+  <!-- SITE TITLE -->
+  <title>Portfolio</title>
+  <!-- Favicon Icon -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"> -->
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- Latest Bootstrap min CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+    rel="stylesheet">
+  <!-- Icon Font CSS -->
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- Flaticon Font CSS -->
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <!--- owl carousel CSS-->
+  <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+  <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Scrollbar Css -->
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+
+  <style>
+    .d-social {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .a-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: #eee;
+      margin: 10px;
+      border-radius: 30%;
+      box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .7);
+      color: #3498db;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .a-social svg {
+      font-size: 28px;
+      transition: 0.5s linear;
+    }
+
+    .a-social:hover svg {
+      transform: scale(1.3);
+      color: #eee;
+    }
+
+    .a-social::before {
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: #3498db;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    }
+
+    .a-social:hover::before {
+      animation: a-social-animation 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+
+    @keyframes a-social-animation {
+      0% {
+        left: -110%;
+        top: 90%;
+      }
+
+      50% {
+        left: 10%;
+        top: -30%;
+      }
+
+      100% {
+        left: -10%;
+        top: -10%;
+      }
+    }
+
+    .wrap {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .button {
+      width: 140px;
+      height: 45px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .button:hover {
+      background-color: #2EE59D;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px);
+    }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="110">
+
+  <!-- LOADER -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="loader-inner ball-scale">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- END LOADER -->
+
+  <!-- START HEADER -->
+  <header class="header_wrap fixed-top dark_skin hover_menu_style3 transparent-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand page-scroll" href="#home_section">
+          <!-- <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
+            <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+            <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" /> -->
+          Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+            class="ion-android-menu"></span> </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <a class="navbar-brand page-scroll" href="#home_section">
+            <!-- <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
+                <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" /> -->
+          </a>
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link active page-scroll" href="#home_section">Home</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#services">Skills</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#experience">Pengalaman</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#blog">Edukasi</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#contact">Hubungi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- START HEADER -->
+
+  <!-- START SECTION BANNER -->
+  <section id="home_section" class="banner_section banner_shape">
+    <div class="banner_slide_content pb-0">
+      <div class="container">
+        <!-- STRART CONTAINER -->
+        <div class="row justify-content-between align-items-center">
+          <div class="col-xl-6 col-md-7">
+            <div class="banner_content banner_center_content">
+              <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.02s">Hendry Agus
+                Setiawan</h2>
+              <div id="typed-strings" class="d-none">
+                <b>Programmer</b>
+              </div>
+              <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Saya Seorang <span
+                  id="typed-text" class="text_default"></span></h4>
+              <p class="animation" data-animation="fadeInUp" data-animation-delay="0.04s">Saya mempunyai minat untuk
+                menjadi seorang Web Developer dan Flutter Developer.</p>
+              <a href="assets/resume/Resume-HendryAgusSetiawan.pdf"
+                class="btn btn-default rounded-0 btn-aylen animation" data-animation="fadeInUp"
+                data-animation-delay="0.05s">Download CV</a>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-5">
+            <div class="banner_img animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+              <img src="assets/images/profile_hendryas.png" alt="my_image" />
+            </div>
+          </div>
+        </div>
+      </div><!-- END CONTAINER-->
+    </div>
+    <!-- <div class="social_banner social_vertical">
+    	<ul class="list_none social_icons text-center">
+            <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="#" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="#" class="sc_google"><i class="ion-social-googleplus"></i></a></li>
+            <li><a href="#" class="sc_youtube"><i class="ion-social-youtube-outline"></i></a></li>
+            <li><a href="#" class="sc_instagram"><i class="ion-social-instagram-outline"></i></a></li>
+        </ul>
+    </div> -->
+  </section>
+  <!-- END SECTION BANNER -->
+
+  <!-- START SECTION ABOUT US -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about_img animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <img src="assets/images/udinus_hendryas.png" alt="about_img" />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="about_info animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <div class="heading_s1 mb-3">
+              <h2>About Me</h2>
+            </div>
+            <p>Seorang Fresh Graduate dari Universitas Dian Nuswantoro, yang memiliki minat untuk
+              menjadi Web Developer dan Flutter Developer. Mengikuti course online
+              dan mencari sebuah project untuk
+              meningkatkan skill, serta mencoba
+              banyak hal dalam mengembangkan
+              sebuah project.
+            </p>
+            <hr>
+            <div class="heading_s1 mb-4">
+              <h5>Basic Info</h5>
+            </div>
+            <ul class="profile_info list_none">
+              <li>
+                <span class="title">PHONE:</span>
+                <p>+62 853 2502 6752</p>
+              </li>
+              <li>
+                <span class="title">E-MAIL:</span>
+                <a href="hendryas321@gmail.com">hendryas321@gmail.com</a>
+              </li>
+              <li>
+                <span class="title">ALAMAT:</span>
+                <p>Batang, Jawa Tengah</p>
+              </li>
+              <li>
+                <span class="title">SOCIAL:</span>
+                <p>
+                  <span class="span-icons">
+                    <a target="_blank" href="https://www.instagram.com/henthreee/"
+                      class="mdi fonts-icons mdi-instagram"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/hendryas/"
+                      class="mdi fonts-icons mdi-linkedin pl-3"></a>
+                    <a target="_blank" href="https://github.com/hendryas"
+                      class="mdi fonts-icons mdi-github-circle pl-3"></a>
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION ABOUT US -->
+
+  <!-- START SECTION SERVICES -->
+  <section id="services" class="bg_gray">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+          <div class="heading_s1 animation text-center" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <h2>Skills</h2>
+          </div>
+          <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Saya terinspirasi untuk
+            menciptakan karya hebat bersama orang-orang yang mempunyai keinginan dan ide yang bagus tentang membangun
+            suatu karya yang luar biasa.</p>
+        </div>
+      </div>
+      <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+        <div class="col-lg-6 col-sm-6 text-center">
+          <div class="icon_box icon_box_style_1">
+            <div class="box_icon mb-3">
+              <i class="ti-layout-slider"></i>
+            </div>
+            <div class="icon_box_content">
+              <h5>Backend Development</h5>
+              <p>PHP, Codeigniter, Javascript,
+                Dart, Express.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 text-center">
+          <div class="icon_box icon_box_style_1">
+            <div class="box_icon mb-3">
+              <i class="ti-layout"></i>
+            </div>
+            <div class="icon_box_content">
+              <h5>Frontend Development</h5>
+              <p>HTML, CSS, SASS/SCSS, Bootstrap, Flutter, Javascript, Dart, React JS.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 text-center">
+          <div class="icon_box icon_box_style_1">
+            <div class="box_icon mb-3">
+              <i class="ti-world"></i>
+            </div>
+            <div class="icon_box_content">
+              <h5>Database</h5>
+              <p>MySQL, Microsoft SQL Server, PostgreSQL.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 text-center">
+          <div class="icon_box icon_box_style_1">
+            <div class="box_icon mb-3">
+              <i class="ti-reload"></i>
+            </div>
+            <div class="icon_box_content">
+              <h5>Version Control</h5>
+              <p>Github.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION SERVICES -->
+
+  <!-- START WORK EXPERIENCES -->
+  <section id="experience">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+          <div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <h2>Pengalaman</h2>
+          </div>
+          <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Memiliki pengalaman dalam bidang
+            teknologi informasi.</p>
+        </div>
+      </div>
+      <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+        <div class="col-lg-6 col-sm-6">
+          <div class="icon_box icon_box_style_2">
+            <div class="icon_box_content">
+              <h4>Web Developer - Internship</h4>
+              <p><span class="text_default">Juli 2021 - Agustus 2021</span> <br> Dinas Komunikasi dan
+                Informatika Pekalongan</p>
+              <hr>
+              <p>
+                Membuat aplikasi E-KINERJA untuk menunjang kebutuhan dalam membuat laporan harian dan bulanan
+                untuk pegawai NON ASN di Dinas Komunikasi Dan Informatika Pekalongan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="icon_box icon_box_style_2">
+            <div class="icon_box_content">
+              <h4>Web Developer - Internship</h4>
+              <p><span class="text_default">September 2021 - Maret 2022</span> <br> RSUP DR. Kariadi Semarang</p>
+              <hr>
+              <p>Membuat aplikasi E-DIKLAT untuk menunjang kebutuhan dalam pengadaan pelatihan dan penelitian di RSUP
+                Dr. Kariadi Semarang yang dikembangkan oleh 2 developer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END WORK EXPERIENCES -->
+
+  <!-- START Edukasi -->
+  <section id="blog" class="bg_gray">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+          <div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <h2>Pendidikan</h2>
+          </div>
+          <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Dalam mencari ilmu dalam hidup
+            saya pernah menimba ilmu pada beberapa tempat.</p>
+        </div>
+      </div>
+      <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+        <div class="col-lg-6 col-sm-6">
+          <div class="icon_box icon_box_style_2">
+            <div class="icon_box_content">
+              <h4>Teknik Informatika S1</h4>
+              <p><span class="text_default">September 2018 - Februari 2022</span> <br> Universitas Dian Nuswantoro</p>
+              <hr>
+              <p>Belajar mengenai teknologi informasi dengan peminatan Rekayasa Perangkat Lunak dan Data
+                Mencapai kelulusan dengan mengikuti program KKI (Kuliah Kerja Industri) yang bekerjasama dengan
+                RSUP.Dr. kariadi Semarang.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="icon_box icon_box_style_2">
+            <div class="icon_box_content">
+              <h4>Teknik Pemesinan</h4>
+              <p><span class="text_default">Februari 2012 - Mei 2015</span> <br> SMK N 1 Kandeman</p>
+              <hr>
+              <p>Belajar mengenai teknik pemesinan. Memiliki minat dalam teknologi dan informasi serta mencoba
+                mempelajarinya.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- END Edukasi -->
+
+  <!-- START SECTION PORTFOLIO -->
+  <section id="portfolio" class="pb_70">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+          <div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <h2>My Portfolio</h2>
+          </div>
+          <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="cleafix small_divider"></div>
+        </div>
+      </div>
+      <div class="row mb-4 mb-md-5">
+        <div class="col-md-12 text-center">
+          <ul class="list_none grid_filter filter_tab2 animation" data-animation="fadeInUp"
+            data-animation-delay="0.04s">
+            <li><a href="#" class="current" data-filter="*">ALL</a></li>
+            <li><a href="#" data-filter=".brands">MOBILE</a></li>
+            <li><a href="#" data-filter=".web-design">WEB</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="grid_container gutter_medium work_col3 portfolio_gallery portfolio_style2 animation"
+            data-animation="fadeInUp" data-animation-delay="0.04s">
+            <li class="grid-sizer"></li>
+            <!-- START PORTFOLIO ITEM -->
+            <li class="grid_item web-design">
+              <div class="portfolio_item" data-tilt>
+                <a href="#" class="image_link">
+                  <img src="assets/images/web_diklat.png" alt="image">
+                </a>
+                <div class="portfolio_content">
+                  <div class="link_container">
+                  </div>
+                  <h5><a href="#" data-toggle="modal" data-target="#modalEDiklat">E-DIKLAT RSUP.DR.Kariadi Semarang</a>
+                  </h5>
+                  <p>Website</p>
+                </div>
+              </div>
+            </li>
+            <!-- END PORTFOLIO ITEM -->
+            <!-- START PORTFOLIO ITEM -->
+            <li class="grid_item web-design">
+              <div class="portfolio_item" data-tilt>
+                <a href="#" class="image_link">
+                  <img src="assets/images/web_ecommerce_satriashop.png" alt="image">
+                </a>
+                <div class="portfolio_content">
+                  <div class="link_container">
+                  </div>
+                  <h5><a href="#" data-toggle="modal" data-target="#modalEcommerceSatriaShop">E-COMMERCE Satria Shop</a>
+                  </h5>
+                  <p>Website</p>
+                </div>
+              </div>
+            </li>
+            <!-- END PORTFOLIO ITEM -->
+            <!-- START PORTFOLIO ITEM -->
+            <li class="grid_item web-design">
+              <div class="portfolio_item" data-tilt>
+                <a href="#" class="image_link">
+                  <img src="assets/images/web_ekinerja_kominfo.png" alt="image">
+                </a>
+                <div class="portfolio_content">
+                  <div class="link_container">
+                  </div>
+                  <h5><a href="#" data-toggle="modal" data-target="#modalEkinerjaKominfo">E-KINERJA Dinas Komunikasi dan
+                      Informatika Pekalongan</a></h5>
+                  <p>Website</p>
+                </div>
+              </div>
+            </li>
+            <!-- END PORTFOLIO ITEM -->
+            <!-- START PORTFOLIO ITEM -->
+            <li class="grid_item web-design">
+              <div class="portfolio_item" data-tilt>
+                <a href="#" class="image_link">
+                  <img src="assets/images/screenshoot_pjtki.png" alt="image">
+                </a>
+                <div class="portfolio_content">
+                  <div class="link_container">
+                  </div>
+                  <h5><a href="#" data-toggle="modal" data-target="#modalPJTKI">PJTKI Tegal</a></h5>
+                  <p>Website</p>
+                </div>
+              </div>
+            </li>
+            <!-- END PORTFOLIO ITEM -->
+            <!-- START PORTFOLIO ITEM -->
+            <li class="grid_item brands">
+              <div class="portfolio_item" data-tilt>
+                <a href="#" class="image_link">
+                  <img src="assets/images/mobile_airplane_1.jpg" alt="image">
+                </a>
+                <div class=" portfolio_content">
+                  <div class="link_container">
+                  </div>
+                  <h5><a href="#" data-toggle="modal" data-target="#modalAirPlaneFlutter">Air Plane</a></h5>
+                  <p>Mobile, Flutter</p>
+                </div>
+              </div>
+            </li>
+            <!-- END PORTFOLIO ITEM -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION PORTFOLIO -->
+
+  <!-- START SECTION CONTACT -->
+  <section id="contact" class="small_pt bg_gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="field_form form_style3">
+            Siap bekerjasama dalam membuat hal yang luar biasa. Anda dapat menghubungi saya secara langsung.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mt-4 mt-md-0">
+            <div class="d-social">
+              <a href="https://www.instagram.com/henthreee/" class="a-social" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/hendryas/" class="a-social" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=6285325026752&text=Halo, Saya ingin bekerjasama dengan anda."
+                class="a-social" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://github.com/hendryas" class="a-social" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- START SECTION CONTACT -->
+
+  <!-- START FOOTER SECTION -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="bottom_footer border-top">
+            <div class="row">
+              <div class="col-12">
+                <p class="copyright m-0 text-center">&copy;
+                  <script>
+                    document.write(new Date().getFullYear())
+                  </script> <a href="#" class="text_default">Hendry Agus
+                    Setiawan</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+  <!-- Start Portfolio E-DIKLAT Modal -->
+  <div class="modal fade" id="modalEDiklat" tabindex="-1" role="dialog" aria-labelledby="modalEDiklatTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-title">
+            <h1 style="font-weight: 700;"><span class="point">Aplikasi E-DIKLAT</span></h1>
+          </div>
+          <br>
+          <center>
+            <div class="modal-images">
+              <img src="assets/images/screenshoot_ediklat1.png" alt="">
+              <img src="assets/images/screenshoot_ediklat2.png" alt="" class="mt-4">
+            </div>
+          </center>
+          <div class="modal-description mt-3">
+            <p style="text-align: justify; text-justify: inter-word;">
+              Aplikasi E-DIKLAT adalah aplikasi learning berbasis website yang dikembangkan untuk
+              menunjang kebutuhan DIKLAT dalam rangka pengadaan pelatihan dan
+              penelitian bagi rekan tenaga medis di RSUP. Dr. Kariadi Semarang yang bertujuan untuk meningkatkan
+              kompetensi, kemampuan, dan ketrampilan di bidang unit kesehatan pelayanan
+              rumah sakit. Aplikasi ini dibuat dengan menerapkan Metode Agile dengan
+              jenis Model Scrum. E-DIKLAT dikembangkan ketika mengikuti program
+              KKI(Kuliah Kerja Industri) dari Universitas Dian Nuswantoro yang bekerjasama dengan RSUP Dr. Kariadi
+              Semarang. Aplikasi ini dikembangkan selama 6 bulan dimulai dari September 2021 - Februari 2022 dan
+              penambahan durasi 1 bulan pada Maret 2022 untuk melakukan implementasi.</p>
+          </div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Stack</th>
+                <td>HTML, CSS, Bootstrap, Javascript, SVG, Codeigniter 3, Microsoft SQL Server, HMVC</td>
+              </tr>
+              <tr>
+                <th scope="row">Fitur</th>
+                <td>Pelatihan, Penelitian, Manajemen Pendaftaran, Manajemen Pelatihan, Manajemen Penelitian, Menu
+                  Dinamis, Carousel & Banner Dinamis</td>
+              </tr>
+              <tr>
+                <th scope="row">Date</th>
+                <td>Maret 2022</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="about-btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="http://ediklat.rskariadi.id" style="color: #fff;" type="button" class="btn btn-primary"
+              target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio E-DIKLAT Modal -->
+
+  <!-- Start Portfolio E-COMMERCE SatriaShop Modal -->
+  <div class="modal fade" id="modalEcommerceSatriaShop" tabindex="-1" role="dialog"
+    aria-labelledby="modalEcommerceSatriaShopTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-title">
+            <h1 style="font-weight: 700;"><span class="point">Aplikasi E-COMMERCE SatriaShop</span></h1>
+          </div>
+          <br>
+          <center>
+            <div class="modal-images">
+              <img src="assets/images/screenshoot_ecommerce1.png" alt="">
+              <img src="assets/images/screenshoot_ecommerce2.png" alt="" class="mt-4">
+            </div>
+          </center>
+          <div class="modal-description mt-3">
+            <p style="text-align: justify; text-justify: inter-word;">
+              Aplikasi E-COMMERCE Satria Shop adalah aplikasi jual beli online.
+              Produk yang dijual terbatas dan hanya satu penjual saja. Aplikasi ini menggunakan API
+              raja ogkir untuk menyediakan informasi mengenai biaya ongkos kirim serta kurir seperti TIKI, JNE,
+              dan POS Indonesia.</p>
+          </div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Stack</th>
+                <td>HTML, CSS, Bootstrap, Javascript, PNG, Codeigniter 3, MySQL, HMVC</td>
+              </tr>
+              <tr>
+                <th scope="row">Fitur</th>
+                <td>Pendaftaran Akun, Manajemen Produk, Riwayat Pesanan, Laporan Penjualan Harian dan Bulanan, API Raja
+                  Ongkir</td>
+              </tr>
+              <tr>
+                <th scope="row">Date</th>
+                <td>Mei 2022</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="about-btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="https://github.com/hendryas/ecommerce-satriashop" style="color: #fff;" type="button"
+              class="btn btn-primary" target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio E-COMMERCE SatriaShop Modal -->
+
+  <!-- Start Portfolio E-KINERJA Kominfo Modal -->
+  <div class="modal fade" id="modalEkinerjaKominfo" tabindex="-1" role="dialog"
+    aria-labelledby="modalEkinerjaKominfoTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-title">
+            <h1 style="font-weight: 700;"><span class="point">Aplikasi E-KINERJA</span></h1>
+          </div>
+          <br>
+          <center>
+            <div class="modal-images">
+              <img src="assets/images/screenshoot_ekinerja2.png" alt="">
+              <img src="assets/images/screenshoot_ekinerja1.png" alt="" class="mt-4">
+            </div>
+          </center>
+          <div class="modal-description mt-3">
+            <p style="text-align: justify; text-justify: inter-word;">
+              Aplikasi E-KINERJA adalah aplikasi yang dapat membantu untuk melaporkan
+              kegiatan harian dan bulanan bagi pegawai NON ASN dan data tersebut sebagai acuan
+              untuk memberikan tunjangan kinerja yang akan diterima oleh pegawai.
+              Aplikasi yang dibuat merupakan project magang yang di kontrak selama 1
+              bulan.
+            </p>
+          </div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Stack</th>
+                <td>HTML, CSS, Bootstrap, Javascript, PNG, Codeigniter 3, MySQL, MVC</td>
+              </tr>
+              <tr>
+                <th scope="row">Fitur</th>
+                <td>Pendaftaran Akun, Manajemen Kegiatan, Laporan Kegiatan Harian dan Bulanan</td>
+              </tr>
+              <tr>
+                <th scope="row">Date</th>
+                <td>Agustus 2021</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="about-btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="https://github.com/hendryas/E-KINERJA-Non-ASN" style="color: #fff;" type="button"
+              class="btn btn-primary" target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio E-KINERJA Kominfo Modal -->
+
+  <!-- Start Portfolio E-KINERJA Kominfo Modal -->
+  <div class="modal fade" id="modalPJTKI" tabindex="-1" role="dialog" aria-labelledby="modalPJTKITitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-title">
+            <h1 style="font-weight: 700;"><span class="point">Aplikasi PJTKI Tegal</span></h1>
+          </div>
+          <br>
+          <center>
+            <div class="modal-images">
+              <img src="assets/images/screenshoot_pjtki.png" alt="">
+            </div>
+          </center>
+          <div class="modal-description mt-3">
+            <p style="text-align: justify; text-justify: inter-word;">
+              Aplikasi PJTKI merupakan website penyalur TKI yang dapat membantu memberikan informasi lowongan pekerjaan.
+              PJTKI merupakan perusahaan jasa yang bergerak di bidang penempatan, penyaluran, dan perlindungan terhadap
+              tenaga kerja indonesia. PJTKI mempunyai tugas
+              melaksanakan kegiatan penempatan tenaga kerja sesuai dengan proses Antar Kerja baik di dalam maupun ke
+              luar negeri.
+            </p>
+          </div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Stack</th>
+                <td>HTML, CSS, Bootstrap, Javascript, PNG, Codeigniter 3, MySQL, MVC</td>
+              </tr>
+              <tr>
+                <th scope="row">Fitur</th>
+                <td>CMS</td>
+              </tr>
+              <tr>
+                <th scope="row">Date</th>
+                <td>Agustus 2022</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="about-btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="https://www.pjtkialampermaiindonesia.com/" style="color: #fff;" type="button"
+              class="btn btn-primary" target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio E-KINERJA Kominfo Modal -->
+
+  <!-- Start Portfolio Air Plane Flutter Modal -->
+  <div class="modal fade" id="modalAirPlaneFlutter" tabindex="-1" role="dialog"
+    aria-labelledby="modalAirPlaneFlutterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-title">
+            <h1 style="font-weight: 700;"><span class="point">Aplikasi Air Plane</span> </h1>
+          </div>
+          <br>
+          <center>
+            <div class="modal-images">
+              <img src="assets/images/mobile_airplane_2.jpg" alt="" style="width: 300px; height: 500px;">
+            </div>
+          </center>
+          <div class="modal-description mt-3">
+            <p style="text-align: justify; text-justify: inter-word;">
+              Aplikasi Airplane adalah aplikasi penyedia booking tiket pesawat dan
+              dapat melilih tempat destinasi yang tersedia. Aplikasi ini terdapat
+              fitur seperti Pendaftaran Akun, Authentication dengan Firebase, Destinasi, Detail Tempat Destinasi,
+              Pilih Tempat Duduk, dan Checkout.
+            </p>
+          </div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Stack</th>
+                <td>Dart, Flutter</td>
+              </tr>
+              <tr>
+                <th scope="row">Fitur</th>
+                <td>Pendaftaran Akun, Authentication dengan Firebase, Pilih Tempat Duduk, Checkout</td>
+              </tr>
+              <tr>
+                <th scope="row">Date</th>
+                <td>Mei 2022</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="about-btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="https://github.com/hendryas/airplane" style="color: #fff;" type="button" class="btn btn-primary"
+              target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio Air Plane Flutter Modal -->
+
+  <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+
+  <!-- Latest jQuery -->
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <!-- jquery-ui -->
+  <script src="assets/js/jquery-ui.js"></script>
+  <!-- popper min js -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- owl-carousel min js  -->
+  <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+  <!-- magnific-popup min js  -->
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <!-- waypoints min js  -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <!-- parallax js  -->
+  <script src="assets/js/parallax.js"></script>
+  <!-- countdown js  -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <!-- jquery.counterup.min js -->
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <!-- imagesloaded js -->
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <!-- isotope min js -->
+  <script src="assets/js/isotope.min.js"></script>
+  <!-- vanilla-tilt.babel.min js -->
+  <script src='assets/js/vanilla-tilt.babel.min.js'></script>
+  <!-- typed.min js -->
+  <script src="assets/js/typed.min.js"></script>
+  <!-- typed text js -->
+  <script src="assets/js/typed-text.js"></script>
+  <!-- mCustomScrollbar.concat.min js -->
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- scripts js -->
+  <script src="assets/js/scripts.js"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js"
+    integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
