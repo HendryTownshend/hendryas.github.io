@@ -153,9 +153,20 @@ button:focus {
 	color: #ffffff !important;
 	padding: 10px 30px;
 }
+.btn-primary {
+	background-color: #2765e2;
+	border: 2px solid #2765e2;
+	color: #ffffff !important;
+	padding: 10px 30px;
+}
 .btn-default:hover {
 	background-color: #27CE78;
 	border-color: #27CE78;
+	color: #fff;
+}
+.btn-primary:hover {
+	background-color: #2765e2;
+	border-color: #2765e2;
 	color: #fff;
 }
 .btn-white {
@@ -275,6 +286,10 @@ button:focus {
 }
 .btn-default.btn-aylen:hover {
 	color: #27E278 !important;
+	z-index: 0;
+}
+.btn-primary.btn-aylen:hover {
+	color: #2765e2 !important;
 	z-index: 0;
 }
 .btn-aylen2::before {
