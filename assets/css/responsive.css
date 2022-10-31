@@ -860,6 +860,7 @@ section.pb_70, .pb_70 {
 	height: 200px !important;
 }
 .btn-default,
+.btn-default2,
 .btn-black,
 .btn-outline-white,
 .btn-outline-black,
@@ -1066,11 +1067,15 @@ section.pb_70, .pb_70 {
 .btn-default {
 	padding: 10px 22px;
 }
+.btn-default2{
+    padding: 10px 22px;
+}
 .btn-black, .btn-outline-white, .btn-outline-black, .btn-outline-default {
 	padding: 10px 22px;
 }
 .banner_content .btn,
 .btn-default,
+.btn-default2,
 .btn-black,
 .btn-outline-white,
 .btn-outline-black,
@@ -1170,6 +1175,9 @@ section.pb_70, .pb_70 {
     padding-left: 40px;
 }
 .btn-default.btn-addtocart {
+	padding: 5px 20px;
+}
+.btn-default2.btn-addtocart {
 	padding: 5px 20px;
 }
 .comment-date {
